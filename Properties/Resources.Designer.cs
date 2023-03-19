@@ -71,6 +71,16 @@ namespace AnimatedProjectICS4U.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] jump {
+            get {
+                object obj = ResourceManager.GetObject("jump", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap obstacle_1 {

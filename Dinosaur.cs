@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace AnimatedProjectICS4U
 {
@@ -13,7 +15,8 @@ namespace AnimatedProjectICS4U
         double force = 12;
         public PictureBox dino;
         
-        
+
+
         public Dinosaur(PictureBox _dino)
         {
             
@@ -22,6 +25,7 @@ namespace AnimatedProjectICS4U
         }
         public void JumpPhysics(bool wDown)
         {
+            var sound = new System.Windows.Media.Sound();
             dino.Top += jumpHeight;
             if (wDown && force > 0)
             {
