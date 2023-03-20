@@ -37,10 +37,10 @@ namespace AnimatedProjectICS4U
                 jumpHeight = 10;
                 wDown = false;
             }
-            if (dino.Top > 353 && wDown == false)
+            if (dino.Top > 483 && wDown == false)
             {
                 force = 12;
-                dino.Top = 354;
+                dino.Top = 484;
                 jumpHeight = 0;
 
             }   

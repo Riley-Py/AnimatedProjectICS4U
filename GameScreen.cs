@@ -12,7 +12,9 @@ namespace AnimatedProjectICS4U
 {
     public partial class GameScreen : UserControl
     {
-        bool wDown;
+        //Necessary variables for the game
+        bool spaceDown;
+        bool escapeDown;
         Dinosaur dinoMan;
         Obstacle obstacles;
         List<PictureBox> obstacleList = new List<PictureBox>();
@@ -22,7 +24,7 @@ namespace AnimatedProjectICS4U
         public GameScreen()
         {
             InitializeComponent();
-            GameInitiaize();
+            GameInitialize();
            
 
 
@@ -30,7 +32,7 @@ namespace AnimatedProjectICS4U
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
-            dinoMan.JumpPhysics(wDown);
+            dinoMan.JumpPhysics(spaceDown);
             obstacles.MoveObstacle(this.Width);
 
             scoreLabel.Text = $"Score: {Math.Round(obstacles.scoring)}";
@@ -42,6 +44,7 @@ namespace AnimatedProjectICS4U
                 
                 Form1.ChangeScreen(this, new GameOver());         
             }
+            
            
                                                      
 
@@ -52,8 +55,12 @@ namespace AnimatedProjectICS4U
             switch(e.KeyCode)
             {
                 case Keys.Space:
-                    wDown = false;
+                    spaceDown = false;
                     break;
+                case Keys.Escape:
+                    escapeDown = false;
+                    break;
+
 
             }
         }
@@ -63,18 +70,27 @@ namespace AnimatedProjectICS4U
             switch (e.KeyCode)
             {
                 case Keys.Space:
-                    wDown = true;
+                    spaceDown = true;
+                    break;
+                case Keys.Escape:
+                    escapeDown = true;
                     break;
             }
         }
-        private void GameInitiaize()
+        /// <summary>
+        /// Initializes the game 
+        /// </summary>
+        private void GameInitialize()
         {
             
             
             obstacleList.Add(obstacle2);
             obstacleList.Add(obstacle1);
+            
 
-            mainCharacter.Top = 354;
+            mainCharacter.Top = 485;
+
+            Cursor.Hide();
 
 
             dinoMan = new Dinosaur(mainCharacter);
