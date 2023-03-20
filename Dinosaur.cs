@@ -25,7 +25,7 @@ namespace AnimatedProjectICS4U
         }
         public void JumpPhysics(bool wDown)
         {
-            var sound = new System.Windows.Media.Sound();
+            //TODO: ask about sound on .NET 6/7
             dino.Top += jumpHeight;
             if (wDown && force > 0)
             {
