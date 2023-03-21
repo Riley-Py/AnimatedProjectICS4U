@@ -37,10 +37,9 @@
             // 
             // playButton
             // 
-            this.playButton.Location = new System.Drawing.Point(897, 439);
-            this.playButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.playButton.Location = new System.Drawing.Point(785, 329);
             this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(120, 66);
+            this.playButton.Size = new System.Drawing.Size(105, 50);
             this.playButton.TabIndex = 1;
             this.playButton.Text = "Play";
             this.playButton.UseVisualStyleBackColor = true;
@@ -48,10 +47,9 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(897, 557);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.exitButton.Location = new System.Drawing.Point(785, 418);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(120, 72);
+            this.exitButton.Size = new System.Drawing.Size(105, 54);
             this.exitButton.TabIndex = 2;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -62,9 +60,9 @@
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Cascadia Code SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.titleLabel.Location = new System.Drawing.Point(836, 139);
+            this.titleLabel.Location = new System.Drawing.Point(732, 104);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(251, 40);
+            this.titleLabel.Size = new System.Drawing.Size(196, 32);
             this.titleLabel.TabIndex = 3;
             this.titleLabel.Text = "Dinosaur Game";
             // 
@@ -72,25 +70,23 @@
             // 
             this.dinyPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.dinyPicture.Image = global::AnimatedProjectICS4U.Properties.Resources.running;
-            this.dinyPicture.Location = new System.Drawing.Point(936, 292);
-            this.dinyPicture.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dinyPicture.Location = new System.Drawing.Point(819, 219);
             this.dinyPicture.Name = "dinyPicture";
-            this.dinyPicture.Size = new System.Drawing.Size(44, 47);
+            this.dinyPicture.Size = new System.Drawing.Size(38, 35);
             this.dinyPicture.TabIndex = 4;
             this.dinyPicture.TabStop = false;
             // 
             // MenuScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.dinyPicture);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.playButton);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MenuScreen";
-            this.Size = new System.Drawing.Size(1920, 1080);
+            this.Size = new System.Drawing.Size(1680, 810);
             ((System.ComponentModel.ISupportInitialize)(this.dinyPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -50,10 +50,9 @@
             // ground
             // 
             this.ground.BackColor = System.Drawing.Color.Black;
-            this.ground.Location = new System.Drawing.Point(-2, 528);
-            this.ground.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ground.Location = new System.Drawing.Point(-2, 396);
             this.ground.Name = "ground";
-            this.ground.Size = new System.Drawing.Size(1922, 552);
+            this.ground.Size = new System.Drawing.Size(1919, 681);
             this.ground.TabIndex = 0;
             this.ground.TabStop = false;
             // 
@@ -61,8 +60,7 @@
             // 
             this.mainCharacter.BackColor = System.Drawing.Color.Transparent;
             this.mainCharacter.Image = global::AnimatedProjectICS4U.Properties.Resources.running;
-            this.mainCharacter.Location = new System.Drawing.Point(29, 485);
-            this.mainCharacter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mainCharacter.Location = new System.Drawing.Point(25, 355);
             this.mainCharacter.Name = "mainCharacter";
             this.mainCharacter.Size = new System.Drawing.Size(40, 43);
             this.mainCharacter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -73,8 +71,7 @@
             // 
             this.obstacle1.BackColor = System.Drawing.Color.Transparent;
             this.obstacle1.Image = global::AnimatedProjectICS4U.Properties.Resources.obstacle_1;
-            this.obstacle1.Location = new System.Drawing.Point(356, 482);
-            this.obstacle1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.obstacle1.Location = new System.Drawing.Point(313, 351);
             this.obstacle1.Name = "obstacle1";
             this.obstacle1.Size = new System.Drawing.Size(23, 46);
             this.obstacle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -85,8 +82,7 @@
             // 
             this.obstacle2.BackColor = System.Drawing.Color.Transparent;
             this.obstacle2.Image = global::AnimatedProjectICS4U.Properties.Resources.obstacle_2;
-            this.obstacle2.Location = new System.Drawing.Point(561, 495);
-            this.obstacle2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.obstacle2.Location = new System.Drawing.Point(491, 364);
             this.obstacle2.Name = "obstacle2";
             this.obstacle2.Size = new System.Drawing.Size(32, 33);
             this.obstacle2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -97,16 +93,16 @@
             // 
             this.scoreLabel.AutoSize = true;
             this.scoreLabel.Font = new System.Drawing.Font("Cascadia Code SemiBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.scoreLabel.Location = new System.Drawing.Point(3, 21);
+            this.scoreLabel.Location = new System.Drawing.Point(3, 16);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(120, 45);
+            this.scoreLabel.Size = new System.Drawing.Size(95, 35);
             this.scoreLabel.TabIndex = 4;
             this.scoreLabel.Text = "Score";
             // 
             // GameScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.scoreLabel);
@@ -115,7 +111,6 @@
             this.Controls.Add(this.obstacle2);
             this.Controls.Add(this.mainCharacter);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(1920, 1080);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameScreen_KeyUp);

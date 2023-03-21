@@ -50,7 +50,7 @@
             // 
             this.deathDinosaurImage.BackColor = System.Drawing.Color.Transparent;
             this.deathDinosaurImage.Image = global::AnimatedProjectICS4U.Properties.Resources.dead;
-            this.deathDinosaurImage.Location = new System.Drawing.Point(175, 120);
+            this.deathDinosaurImage.Location = new System.Drawing.Point(173, 125);
             this.deathDinosaurImage.Name = "deathDinosaurImage";
             this.deathDinosaurImage.Size = new System.Drawing.Size(123, 103);
             this.deathDinosaurImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -89,8 +89,8 @@
             // 
             // GameOver
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.scoreLabel);
