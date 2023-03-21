@@ -20,6 +20,7 @@ namespace AnimatedProjectICS4U
         List<PictureBox> obstacleList = new List<PictureBox>();
         int difficulty = MenuScreen.difficulty;
         public static double finalScore;
+        System.Windows.Media.MediaPlayer sound = new System.Windows.Media.MediaPlayer();
 
         public GameScreen()
         {
@@ -43,6 +44,11 @@ namespace AnimatedProjectICS4U
                 gameTimer.Stop();
                 
                 Form1.ChangeScreen(this, new GameOver());         
+            }
+            if (spaceDown)
+            {
+                sound.Stop();
+                sound.Play();
             }
             
            
@@ -86,7 +92,7 @@ namespace AnimatedProjectICS4U
             
             obstacleList.Add(obstacle2);
             obstacleList.Add(obstacle1);
-            
+            sound.Open(new Uri(Application.StartupPath + "/Resources/jump.mp3"));
 
             mainCharacter.Top = 485;
 

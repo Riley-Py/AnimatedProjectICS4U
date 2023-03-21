@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Windows.Media;
 
 
 namespace AnimatedProjectICS4U
@@ -14,6 +15,8 @@ namespace AnimatedProjectICS4U
         int jumpHeight;
         double force = 12;
         public PictureBox dino;
+       
+        
         
 
 
@@ -25,7 +28,10 @@ namespace AnimatedProjectICS4U
         }
         public void JumpPhysics(bool wDown)
         {
-            //TODO: ask about sound on .NET 6/7
+            
+            
+
+
             dino.Top += jumpHeight;
             if (wDown && force > 0)
             {
