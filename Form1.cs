@@ -4,7 +4,7 @@ namespace AnimatedProjectICS4U
     {
         public Form1()
         {
-            //TODO: ask about fullscreen implementation
+            
             InitializeComponent(); 
 
             ChangeScreen(this, new MenuScreen());

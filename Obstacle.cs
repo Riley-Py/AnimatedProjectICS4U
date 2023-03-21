@@ -36,6 +36,7 @@ namespace AnimatedProjectICS4U
                     
                     if (scoring % 5 == 0 && scoring != 0)
                     {
+                        // Increase obstacle speed & add a tiny ammount to scoring so that it doesn't constantly speed it up when there is no remainder (as platforms are spreaded out)
                         obstacleSpeed += 5;
                         scoring += 0.000001;
                     }

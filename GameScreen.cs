@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media;
 
 namespace AnimatedProjectICS4U
 {
@@ -20,14 +21,12 @@ namespace AnimatedProjectICS4U
         List<PictureBox> obstacleList = new List<PictureBox>();
         int difficulty = MenuScreen.difficulty;
         public static double finalScore;
-        System.Windows.Media.MediaPlayer sound = new System.Windows.Media.MediaPlayer();
+        MediaPlayer sound = new MediaPlayer();
 
         public GameScreen()
         {
             InitializeComponent();
             GameInitialize();
-           
-
 
         }
 
@@ -42,23 +41,23 @@ namespace AnimatedProjectICS4U
             {
                 finalScore = Math.Round(obstacles.scoring);
                 gameTimer.Stop();
-                
-                Form1.ChangeScreen(this, new GameOver());         
+
+                Form1.ChangeScreen(this, new GameOver());
             }
             if (spaceDown)
             {
                 sound.Stop();
                 sound.Play();
             }
-            
-           
-                                                     
+
+
+
 
         }
 
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
-            switch(e.KeyCode)
+            switch (e.KeyCode)
             {
                 case Keys.Space:
                     spaceDown = false;
@@ -88,13 +87,13 @@ namespace AnimatedProjectICS4U
         /// </summary>
         private void GameInitialize()
         {
-            
-            
+
+
             obstacleList.Add(obstacle2);
             obstacleList.Add(obstacle1);
             sound.Open(new Uri(Application.StartupPath + "/Resources/jump.mp3"));
 
-            mainCharacter.Top = 485;
+            mainCharacter.Top = 355;
 
             Cursor.Hide();
 

@@ -37,7 +37,7 @@
             // 
             // playButton
             // 
-            this.playButton.Location = new System.Drawing.Point(785, 329);
+            this.playButton.Location = new System.Drawing.Point(901, 329);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(105, 50);
             this.playButton.TabIndex = 1;
@@ -47,7 +47,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(785, 418);
+            this.exitButton.Location = new System.Drawing.Point(901, 421);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(105, 54);
             this.exitButton.TabIndex = 2;
@@ -60,7 +60,7 @@
             this.titleLabel.AutoSize = true;
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Cascadia Code SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.titleLabel.Location = new System.Drawing.Point(732, 104);
+            this.titleLabel.Location = new System.Drawing.Point(858, 115);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(196, 32);
             this.titleLabel.TabIndex = 3;
@@ -70,9 +70,10 @@
             // 
             this.dinyPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.dinyPicture.Image = global::AnimatedProjectICS4U.Properties.Resources.running;
-            this.dinyPicture.Location = new System.Drawing.Point(819, 219);
+            this.dinyPicture.Location = new System.Drawing.Point(935, 216);
             this.dinyPicture.Name = "dinyPicture";
-            this.dinyPicture.Size = new System.Drawing.Size(38, 35);
+            this.dinyPicture.Size = new System.Drawing.Size(40, 43);
+            this.dinyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.dinyPicture.TabIndex = 4;
             this.dinyPicture.TabStop = false;
             // 
@@ -86,7 +87,7 @@
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.playButton);
             this.Name = "MenuScreen";
-            this.Size = new System.Drawing.Size(1680, 810);
+            this.Size = new System.Drawing.Size(1920, 1080);
             ((System.ComponentModel.ISupportInitialize)(this.dinyPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
