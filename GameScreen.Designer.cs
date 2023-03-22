@@ -52,7 +52,7 @@
             this.ground.BackColor = System.Drawing.Color.Black;
             this.ground.Location = new System.Drawing.Point(-2, 396);
             this.ground.Name = "ground";
-            this.ground.Size = new System.Drawing.Size(1919, 681);
+            this.ground.Size = new System.Drawing.Size(1919, 684);
             this.ground.TabIndex = 0;
             this.ground.TabStop = false;
             // 

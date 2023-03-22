@@ -16,6 +16,8 @@ namespace AnimatedProjectICS4U
         double force = 12;
         public PictureBox dino;
        
+
+       
         
         
 
@@ -25,15 +27,14 @@ namespace AnimatedProjectICS4U
             
             dino = _dino;
             
+            
         }
-        public void JumpPhysics(bool wDown)
+        public void JumpPhysics(bool spaceDown, MediaPlayer player)
         {
             
-            
-
 
             dino.Top += jumpHeight;
-            if (wDown && force > 0)
+            if (spaceDown && force > 0)
             {
                 jumpHeight = -10;
                 force -= 1.15;
@@ -41,17 +42,23 @@ namespace AnimatedProjectICS4U
             else
             {
                 jumpHeight = 10;
-                wDown = false;
+                spaceDown = false;
             }
-            if (dino.Top > 354 && wDown == false)
+            if (dino.Top > 354 && spaceDown == false)
             {
                 force = 12;
                 dino.Top = 355;
                 jumpHeight = 0;
 
-            }   
-            
-            
+            }
+            if (spaceDown && dino.Top > 354)
+            {
+                player.Stop();
+                player.Play();
+
+            }
+
+
 
         }
       

@@ -8,12 +8,11 @@ namespace AnimatedProjectICS4U
 {
     internal class Obstacle
     {
+        #region variables that obstacle needs
         List<PictureBox> obstacles;
         int obstacleSpeed;
         public double scoring;
-        int increment = 1;
-        
-
+        #endregion
         public Obstacle(List<PictureBox> _pictureBox, int _obstacleSpeed) {
 
 
@@ -21,13 +20,17 @@ namespace AnimatedProjectICS4U
             obstacles = _pictureBox;
 
         }
+        /// <summary>
+        /// Moves the obstacles towards the dinosaur
+        /// </summary>
+        /// <param name="width"></param>
         public void MoveObstacle(int width)
         {
             Random randgen = new Random();
-            
-           
+              
             foreach(PictureBox p in obstacles)
             {
+                
                 p.Left -= obstacleSpeed;
                 if (p.Left < -100)
                 {
@@ -47,6 +50,11 @@ namespace AnimatedProjectICS4U
             
             
         }
+        /// <summary>
+        /// Checks to see if any intersection happens between dinosaur and obstacle
+        /// </summary>
+        /// <param name="dino"></param>
+        /// <returns></returns>
         public bool CheckIntersection(Dinosaur dino)
         {
             foreach (PictureBox p in obstacles)
