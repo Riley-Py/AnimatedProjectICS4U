@@ -32,13 +32,9 @@
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.ground = new System.Windows.Forms.PictureBox();
             this.mainCharacter = new System.Windows.Forms.PictureBox();
-            this.obstacle1 = new System.Windows.Forms.PictureBox();
-            this.obstacle2 = new System.Windows.Forms.PictureBox();
             this.scoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainCharacter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obstacle1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obstacle2)).BeginInit();
             this.SuspendLayout();
             // 
             // gameTimer
@@ -67,28 +63,6 @@
             this.mainCharacter.TabIndex = 1;
             this.mainCharacter.TabStop = false;
             // 
-            // obstacle1
-            // 
-            this.obstacle1.BackColor = System.Drawing.Color.Transparent;
-            this.obstacle1.Image = global::AnimatedProjectICS4U.Properties.Resources.obstacle_1;
-            this.obstacle1.Location = new System.Drawing.Point(313, 351);
-            this.obstacle1.Name = "obstacle1";
-            this.obstacle1.Size = new System.Drawing.Size(23, 46);
-            this.obstacle1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.obstacle1.TabIndex = 2;
-            this.obstacle1.TabStop = false;
-            // 
-            // obstacle2
-            // 
-            this.obstacle2.BackColor = System.Drawing.Color.Transparent;
-            this.obstacle2.Image = global::AnimatedProjectICS4U.Properties.Resources.obstacle_2;
-            this.obstacle2.Location = new System.Drawing.Point(491, 364);
-            this.obstacle2.Name = "obstacle2";
-            this.obstacle2.Size = new System.Drawing.Size(32, 33);
-            this.obstacle2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.obstacle2.TabIndex = 3;
-            this.obstacle2.TabStop = false;
-            // 
             // scoreLabel
             // 
             this.scoreLabel.AutoSize = true;
@@ -107,8 +81,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.ground);
-            this.Controls.Add(this.obstacle1);
-            this.Controls.Add(this.obstacle2);
             this.Controls.Add(this.mainCharacter);
             this.DoubleBuffered = true;
             this.Name = "GameScreen";
@@ -117,8 +89,6 @@
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.GameScreen_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.ground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainCharacter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obstacle1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.obstacle2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,8 +99,6 @@
         private System.Windows.Forms.Timer gameTimer;
         private PictureBox ground;
         private PictureBox mainCharacter;
-        private PictureBox obstacle1;
-        private PictureBox obstacle2;
         private Label scoreLabel;
     }
 }

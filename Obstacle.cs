@@ -28,6 +28,7 @@ namespace AnimatedProjectICS4U
            
             foreach(PictureBox p in obstacles)
             {
+                
                 p.Left -= obstacleSpeed;
                 if (p.Left < -100)
                 {
