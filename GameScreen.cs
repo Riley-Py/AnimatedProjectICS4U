@@ -81,10 +81,20 @@ namespace AnimatedProjectICS4U
         /// </summary>
         private void GameInitialize()
         {
+            Random position = new Random();
 
-
-            obstacleList.Add(obstacle2);
-            obstacleList.Add(obstacle1);
+            for (int i = 0; i < 6; i++)
+            {
+                PictureBox obstacleExample = new PictureBox();
+                obstacleExample.Size = new Size(100, 100);
+                obstacleExample.SizeMode = PictureBoxSizeMode.AutoSize;
+                obstacleExample.Image = new Bitmap(Properties.Resources.obstacle_1);
+                obstacleExample.Location = new Point((obstacleExample.Width + position.Next(300, 600)), 355);
+                obstacleExample.Left = obstacleExample.Left * position.Next(10, 18);
+                this.Controls.Add(obstacleExample);
+                obstacleList.Add(obstacleExample);
+                obstacleExample.Show();
+            }
             sound.Open(new Uri(Application.StartupPath + "/Resources/jump.mp3"));
 
             mainCharacter.Top = 355;
