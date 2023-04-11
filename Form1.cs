@@ -1,4 +1,11 @@
 namespace AnimatedProjectICS4U
+/*
+ * Author: Riley Cant
+ * Course: ICS4U
+ * Program: Dinosaur game summative
+ * Date of submission: 10/04/23
+ * Description of game: made a copy of Google's popular "Dinosaur game" in C# to demonstrate classes/objects
+ * */
 {
     public partial class Form1 : Form
     {

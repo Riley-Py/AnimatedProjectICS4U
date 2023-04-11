@@ -12,14 +12,13 @@ namespace AnimatedProjectICS4U
 {
     internal class Dinosaur
     {
+        #region variables for the dinosaur
         int jumpHeight;
         double force = 12;
         public PictureBox dino;
-       
+        #endregion
 
-       
-        
-        
+
 
 
         public Dinosaur(PictureBox _dino)
@@ -29,6 +28,11 @@ namespace AnimatedProjectICS4U
             
             
         }
+        /// <summary>
+        /// Physics for jumping and sound playing
+        /// </summary>
+        /// <param name="spaceDown"></param>
+        /// <param name="player"></param>
         public void JumpPhysics(bool spaceDown, MediaPlayer player)
         {
             

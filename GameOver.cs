@@ -15,16 +15,19 @@ namespace AnimatedProjectICS4U
         public GameOver()
         {
             InitializeComponent();
+            //Shows final score
             scoreLabel.Text = $"Score: {GameScreen.finalScore}";
         }
 
         private void menuButton_Click(object sender, EventArgs e)
         {
+            //Goes back to menu screen
             Form1.ChangeScreen(this, new MenuScreen());
         }
 
         private void exitButton_Click(object sender, EventArgs e)
         {
+            //Exits the application
             Application.Exit();
         }
     }

@@ -30,7 +30,11 @@ namespace AnimatedProjectICS4U
             GameInitialize();
 
         }
-
+        /// <summary>
+        /// Main game loop for the game
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gameTimer_Tick(object sender, EventArgs e)
         {
            
@@ -83,6 +87,7 @@ namespace AnimatedProjectICS4U
         {
             Random position = new Random();
 
+            #region sets up the obstacles using a set number
             for (int i = 0; i < 6; i++)
             {
                 PictureBox obstacleExample = new PictureBox();
@@ -95,6 +100,7 @@ namespace AnimatedProjectICS4U
                 obstacleList.Add(obstacleExample);
                 obstacleExample.Show();
             }
+            #endregion
             sound.Open(new Uri(Application.StartupPath + "/Resources/jump.mp3"));
 
             mainCharacter.Top = 355;
